@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Open Sans', sans-serif;
+    margin: 0px;
 }
 /* header releted styles */
 header{
@@ -63,17 +64,19 @@ height: 24px;
     align-items: center;
     justify-content: space-between;
 }
-.banner-content{
-
-
+.banner-content h2{
+    margin: 0;
+}
+.banner-content h1{
+    margin: 0;
 }
 .banner-img{
     
 }
 .banner-content h2{
 color: #0B0223;
-font-size: 30px;
-font-weight: 600;
+font-size: 40px;
+
 }
 .banner-content h1{
 font-size: 75px;
@@ -85,6 +88,7 @@ background-clip: text;
 }
 .intro-description{
  color: #534C64;
+ margin-bottom: 20px;
 
 font-size: 20px;
 
@@ -93,24 +97,22 @@ font-weight: 500;
 text-transform: lowercase;
 }
 .head-btn{
-    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+
 }
 .first-btn{
     display: inline-flex;
-padding: 21px 40px;
-align-items: flex-start;
-gap: 10px;
-background: #FF42A5;
-border-radius: 48px;
-border: 0;
-color: #FFF;
+    padding: 10px 20px;
+    background: #FF42A5;
+    border-radius: 48px;
+    border: 0;
+    color: #FFF;
 
 }
 .second-btn{
     display: inline-flex;
-    padding: 21px 40px;
-    align-items: flex-start;
-    gap: 10px;
+    padding: 10px 20px;
     background: #4EC5F7;
     border-radius: 48px;
     border: 0;
@@ -129,6 +131,10 @@ color: #FFF;
 .funnyvidu{
     color: #FF42A5;
 }
+#install-description{
+    text-align: right;
+}
+
 .feature-descrip{
     color: #534C64;
 text-align: center;
@@ -144,7 +150,7 @@ font-weight: 400;
 
 .card-img:hover{
   border: 2px solid tomato;
-  border-radius: 10px;
+  border-radius: 15px;
 
 }
     
@@ -153,7 +159,7 @@ font-weight: 400;
     text-align: center;align-items: center;
 }
 .install-content{
-    padding: 50px 200px 50px 150px;
+    padding: 50px 80px 50px 150px;
 
 
 }
@@ -170,29 +176,26 @@ font-weight: 400;
 }
 .install-title{
 text-align: right;
-
-font-size: 2rem;
-
-font-weight: 700;
+font-size: 3rem;
+font-weight: 500;
 
 }
 .option{
     display: flex;
-    padding: 20px 80px;
+    padding: 20px 50px;
     justify-content: space-around;
     align-items: center;
     gap: 70px;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
   background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
   
 }
 .games{
     display: flex;
-    
+    align-items: center;
     border-radius: 50px;
     background: #FFF;
-
-
+    gap: 10px;
 }
 .games:hover{
     border: 2px solid slategray;
@@ -202,6 +205,7 @@ font-weight: 700;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding-top: 40px;
 }
 .footer-story{
     display: flex;
@@ -237,9 +241,34 @@ font-weight: 500;
     nav li{
         flex-direction: column;
     }
+    .header-last-part{
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        gap: 20px;
+    }
+    .header-social{
+        margin-top: 10px;
+        
+
+    }
+    .header-first-part{
+        padding: 5px 20px;
+        justify-content: center;
+    }
+    .banner-content h1{
+        margin: 0;
+    }
+    .banner-content h2{
+        margin-top: 50px;
+    }
+    header{
+        padding: 20px 50px;
+    }
     .banner{
         flex-direction: column;
         padding: 5px;
+        gap: 30px;
         
     }
     .banner-img{
@@ -247,34 +276,83 @@ font-weight: 500;
     }
     .card-title{
         padding: 5px 20px;
+        margin-top: 50px;
     }
     .feature-card{
         flex-direction: column;
     }
+    .install-content{
+        padding: 50px; 
+    }
+    .overly-img{
+        padding: 20px;
+        margin-right: 0px;
+    }
+    .overly-img2{
+        padding: 20px;
+    }
     .install{
         flex-direction: column;
-        padding: 10px 30px;
+       
     }
     .option{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        padding: 20px 20px;
+        
     }
     .footer-story{
+        margin-top: 20px;
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        padding: 10px 40px;
+        padding: 10px 90px;
     }
     .footer-icon{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        padding: 10px 50px;
+        padding: 10px 120px;
 
     }
     .footer-terms{
 
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        padding: 10px 40px;
+        padding: 10px 100px;
+    }
+
+}
+@media screen and (min-width:576px) and (max-width:992px){
+    *{
+        margin: 0;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .header-first-part{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .banner{
+        padding: 0px;
+        max-width: 400px;
+        
+    }
+    .footer-icon{
+        padding: 20px 40px;
+    }
+    .banner-content h1{
+        max-width: 200px;
+        font-size: 4rem;
+        font-weight: 300;
+    }
+    .banner-content h2{
+        margin-top: 50px;
+        font-size: 2rem;
+        max-width: 200px;
+    }
+    .banner-img{
+    width: 200px;
     }
 
 }
